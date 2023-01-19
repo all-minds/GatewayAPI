@@ -1,0 +1,19 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/ws/{cep}/json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "viacep.com.br",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/cep/{cep}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+  }
+}
