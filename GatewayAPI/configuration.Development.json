@@ -1,17 +1,135 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/ws/{cep}/json",
+      "DownstreamPathTemplate": "/api/GetAllOwnersAsync",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "viacep.com.br",
+          "Host": "ip do gui",
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/cep/{cep}",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamPathTemplate": "/api/GetAllOwnersAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/GetOwnerAsync/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do gui",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/GetOwnerAsync/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/AddUserAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do gui",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AddUserAsync",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/UpdateUserAsync/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do gui",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UpdateUserAsync/{id}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/DeleteUserAsync/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do gui",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/DeleteUserAsync/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/GetAllPropertiesAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do ze",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/GetAllPropertiesAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/GetPropertyAsync/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do ze",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/GetPropertyAsync/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/UpdatePropertyAsync/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do ze",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UpdatePropertyAsync/{id}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/DeletePropertyAsync/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do ze",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/DeletePropertyAsync/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/AddPropertyAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ip do ze",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AddPropertyAsync",
+      "UpstreamHttpMethod": [ "PUT" ]
     }
+
   ],
 
   "GlobalConfiguration": {
