@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do gui",
+          "Host": "OwnerAPI",
           "Port": 80
         }
       ],
@@ -18,7 +18,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do gui",
+          "Host": "OwnerAPI",
           "Port": 80
         }
       ],
@@ -31,7 +31,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do gui",
+          "Host": "OwnerAPI",
           "Port": 80
         }
       ],
@@ -44,7 +44,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do gui",
+          "Host": "OwnerAPI",
           "Port": 80
         }
       ],
@@ -57,7 +57,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do gui",
+          "Host": "OwnerAPI",
           "Port": 80
         }
       ],
@@ -70,7 +70,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do ze",
+          "Host": "PropertyAPI",
           "Port": 80
         }
       ],
@@ -83,7 +83,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do ze",
+          "Host": "PropertyAPI",
           "Port": 80
         }
       ],
@@ -96,7 +96,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do ze",
+          "Host": "PropertyAPI",
           "Port": 80
         }
       ],
@@ -109,7 +109,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do ze",
+          "Host": "PropertyAPI",
           "Port": 80
         }
       ],
@@ -122,7 +122,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ip do ze",
+          "Host": "PropertyAPI",
           "Port": 80
         }
       ],
