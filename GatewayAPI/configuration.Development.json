@@ -1,120 +1,129 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/api/GetAllOwnersAsync",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/Owner",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OwnerAPI",
-          "Port": 80
+          "Host": "carbon_credits_owner_microsservice_api",
+          "Port": 7041
         }
       ],
       "UpstreamPathTemplate": "/api/GetAllOwnersAsync",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/api/GetOwnerAsync/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/Owner/{id}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OwnerAPI",
-          "Port": 80
+          "Host": "carbon_credits_owner_microsservice_api",
+          "Port": 7041
         }
       ],
       "UpstreamPathTemplate": "/api/GetOwnerAsync/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/api/AddUserAsync",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/Owner",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OwnerAPI",
-          "Port": 80
+          "Host": "carbon_credits_owner_microsservice_api",
+          "Port": 7041
         }
       ],
       "UpstreamPathTemplate": "/api/AddUserAsync",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/api/UpdateUserAsync/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/Owner/{id}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OwnerAPI",
-          "Port": 80
+          "Host": "carbon_credits_owner_microsservice_api",
+          "Port": 7041
         }
       ],
       "UpstreamPathTemplate": "/api/UpdateUserAsync/{id}",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/api/DeleteUserAsync/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/Owner/{id}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OwnerAPI",
-          "Port": 80
+          "Host": "carbon_credits_owner_microsservice_api",
+          "Port": 7041
         }
       ],
       "UpstreamPathTemplate": "/api/DeleteUserAsync/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/GetAllPropertiesAsync",
+      "DownstreamPathTemplate": "/Properties",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PropertyAPI",
-          "Port": 80
+          "Host": "carbon_credits_property_api",
+          "Port": 5299
         }
       ],
       "UpstreamPathTemplate": "/api/GetAllPropertiesAsync",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/GetPropertyAsync/{id}",
+      "DownstreamPathTemplate": "/Properties/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PropertyAPI",
-          "Port": 80
+          "Host": "carbon_credits_property_api",
+          "Port": 5299
         }
       ],
       "UpstreamPathTemplate": "/api/GetPropertyAsync/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/UpdatePropertyAsync/{id}",
+      "DownstreamPathTemplate": "/Properties/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PropertyAPI",
-          "Port": 80
+          "Host": "carbon_credits_property_api",
+          "Port": 5299
         }
       ],
       "UpstreamPathTemplate": "/api/UpdatePropertyAsync/{id}",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
-      "DownstreamPathTemplate": "/DeletePropertyAsync/{id}",
+      "DownstreamPathTemplate": "/Properties/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PropertyAPI",
-          "Port": 80
+          "Host": "carbon_credits_property_api",
+          "Port": 5299
         }
       ],
       "UpstreamPathTemplate": "/api/DeletePropertyAsync/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     },
 
     {
@@ -122,12 +131,13 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PropertyAPI",
-          "Port": 80
+          "Host": "carbon_credits_property_api",
+          "Port": 5299
         }
       ],
       "UpstreamPathTemplate": "/api/AddPropertyAsync",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
     }
 
   ],
