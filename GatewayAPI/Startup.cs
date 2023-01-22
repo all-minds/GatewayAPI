@@ -26,6 +26,14 @@ namespace GatewayAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOcelot(configuration);
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                    );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +45,7 @@ namespace GatewayAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
@@ -50,6 +58,8 @@ namespace GatewayAPI
                     await context.Response.WriteAsync("API GATEWAY FUNCIONANDO");
                 });
             });
+
+            app.UseCors("CorsPolicy");
 
             app.UseOcelot().Wait();
             
