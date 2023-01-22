@@ -108,7 +108,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/UpdatePropertyAsync/{id}",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamHttpMethod": [ "PUT" ],
       "DangerousAcceptAnyServerCertificateValidator": true
     },
 
@@ -127,7 +127,7 @@
     },
 
     {
-      "DownstreamPathTemplate": "/AddPropertyAsync",
+      "DownstreamPathTemplate": "/Properties",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -136,7 +136,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/AddPropertyAsync",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamHttpMethod": [ "POST" ],
       "DangerousAcceptAnyServerCertificateValidator": true
     }
 
